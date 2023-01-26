@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600&display=swap");
+
+:root {
+  --institute-accent-1: #9c0054;
+  --institute-accent-2: #2056ae;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #121212;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.profile-picture {
+  display: block;
+  height: 164px;
+  width: 164px;
+  margin: 32px auto 16px;
+  border-radius: 50%;
+}
+
+.risk {
+  color: var(--institute-accent-1);
+  font-weight: 600;
+}
+
+.reliability {
+  color: var(--institute-accent-2);
+  font-weight: 600;
+}
+
+.name {
+  color: white;
+  font-size: large;
+  display: block;
+  font-weight: 600;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  width: auto;
+  max-width: 675px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+}
+
+.link {
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.07),
+    rgba(255, 255, 255, 0.07)
+  );
+}
+
+.link:hover {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0.16)
+  );
+}
+
+.linkedin {
+  color: #0072b1;
+}
+
+.researchgate {
+  color: #0cb;
+}
