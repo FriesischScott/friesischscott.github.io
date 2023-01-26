@@ -1,18 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
 
 :root {
+  /* Material Design Guidelines for dark themes*/
+  --background: #121212;
+  --elevation-02dp: #ffffff12;
+  --elevation-24dp: #ffffff29;
+
   --institute-accent-1: #9c0054;
   --institute-accent-2: #2056ae;
+  --linkedin: #0072b1;
+  --researchgate: #0cb;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
   font-family: "Source Sans Pro", sans-serif;
-  background-color: #121212;
-  margin-left: 16px;
-  margin-right: 16px;
+  background-color: var(--background);
+  margin: 0 16px;
 }
 
 .profile-picture {
@@ -35,7 +38,6 @@ body {
 
 .name {
   color: white;
-  font-size: large;
   display: block;
   font-weight: 600;
   text-align: center;
@@ -45,11 +47,8 @@ body {
   display: flex;
   gap: 16px;
   flex-direction: column;
-  width: auto;
   max-width: 675px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 16px;
+  margin: 16px auto 0;
 }
 
 .link {
@@ -58,23 +57,17 @@ body {
   color: white;
   padding: 10px;
   text-align: center;
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0.07),
-    rgba(255, 255, 255, 0.07)
-  );
+  background-color: var(--elevation-02dp);
 }
 
 .link:hover {
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0.16),
-    rgba(255, 255, 255, 0.16)
-  );
+  background-color: var(--elevation-24dp);
 }
 
 .linkedin {
-  color: #0072b1;
+  color: var(--linkedin);
 }
 
 .researchgate {
-  color: #0cb;
+  color: var(--researchgate);
 }
