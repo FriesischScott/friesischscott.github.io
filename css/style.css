@@ -10,6 +10,7 @@
   --institute-accent-2: #2056ae;
   --linkedin: #0072b1;
   --researchgate: #0cb;
+  --orcid: #a6ce39;
 }
 
 body {
@@ -64,6 +65,10 @@ body {
   background-color: var(--elevation-24dp);
 }
 
+.icon {
+  margin-right: 4px;
+}
+
 .linkedin {
   color: var(--linkedin);
 }
@@ -76,11 +81,14 @@ body {
   content: url("/img/google-scholar.svg");
   height: 1em;
   width: auto;
-  margin-right: 2px;
 }
 
 .scholar {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.orcid {
+  color: var(--orcid);
 }
